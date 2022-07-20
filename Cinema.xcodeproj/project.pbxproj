@@ -9,13 +9,20 @@
 /* Begin PBXBuildFile section */
 		EA895F292885EC4700E1C001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA895F282885EC4700E1C001 /* AppDelegate.swift */; };
 		EA895F2B2885EC4700E1C001 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA895F2A2885EC4700E1C001 /* SceneDelegate.swift */; };
-		EA895F2D2885EC4700E1C001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA895F2C2885EC4700E1C001 /* ViewController.swift */; };
-		EA895F302885EC4700E1C001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA895F2E2885EC4700E1C001 /* Main.storyboard */; };
 		EA895F322885EC4900E1C001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA895F312885EC4900E1C001 /* Assets.xcassets */; };
 		EA895F352885EC4900E1C001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA895F332885EC4900E1C001 /* LaunchScreen.storyboard */; };
 		EA895F402885EC4900E1C001 /* CinemaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA895F3F2885EC4900E1C001 /* CinemaTests.swift */; };
 		EA895F4A2885EC4900E1C001 /* CinemaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA895F492885EC4900E1C001 /* CinemaUITests.swift */; };
 		EA895F4C2885EC4900E1C001 /* CinemaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA895F4B2885EC4900E1C001 /* CinemaUITestsLaunchTests.swift */; };
+		EA895F622886180800E1C001 /* NetworkConfigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA895F612886180800E1C001 /* NetworkConfigration.swift */; };
+		EA895F642886195B00E1C001 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA895F632886195B00E1C001 /* EndPoint.swift */; };
+		EA895F6828861B5800E1C001 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA895F6728861B5800E1C001 /* NetworkService.swift */; };
+		EA895F6A28861B6600E1C001 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA895F6928861B6600E1C001 /* DataTransferService.swift */; };
+		EA918A3D28872B6F00D57D19 /* EndPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA918A3C28872B6F00D57D19 /* EndPoint+Extensions.swift */; };
+		EAFEAD5F288743930058ED00 /* NetworkErrorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFEAD5E288743930058ED00 /* NetworkErrorLogger.swift */; };
+		EAFEAD61288746F70058ED00 /* NetworkSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFEAD60288746F70058ED00 /* NetworkSessionManager.swift */; };
+		EAFEAD6528874F090058ED00 /* ResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFEAD6428874F090058ED00 /* ResponseDecoder.swift */; };
+		EAFEAD67288757870058ED00 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFEAD66288757870058ED00 /* ErrorHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +46,6 @@
 		EA895F252885EC4700E1C001 /* Cinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA895F282885EC4700E1C001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA895F2A2885EC4700E1C001 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA895F2C2885EC4700E1C001 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EA895F2F2885EC4700E1C001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA895F312885EC4900E1C001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA895F342885EC4900E1C001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA895F362885EC4900E1C001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +54,15 @@
 		EA895F452885EC4900E1C001 /* CinemaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA895F492885EC4900E1C001 /* CinemaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaUITests.swift; sourceTree = "<group>"; };
 		EA895F4B2885EC4900E1C001 /* CinemaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA895F612886180800E1C001 /* NetworkConfigration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigration.swift; sourceTree = "<group>"; };
+		EA895F632886195B00E1C001 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		EA895F6728861B5800E1C001 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		EA895F6928861B6600E1C001 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		EA918A3C28872B6F00D57D19 /* EndPoint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndPoint+Extensions.swift"; sourceTree = "<group>"; };
+		EAFEAD5E288743930058ED00 /* NetworkErrorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorLogger.swift; sourceTree = "<group>"; };
+		EAFEAD60288746F70058ED00 /* NetworkSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionManager.swift; sourceTree = "<group>"; };
+		EAFEAD6428874F090058ED00 /* ResponseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDecoder.swift; sourceTree = "<group>"; };
+		EAFEAD66288757870058ED00 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +113,12 @@
 		EA895F272885EC4700E1C001 /* Cinema */ = {
 			isa = PBXGroup;
 			children = (
-				EA895F282885EC4700E1C001 /* AppDelegate.swift */,
-				EA895F2A2885EC4700E1C001 /* SceneDelegate.swift */,
-				EA895F2C2885EC4700E1C001 /* ViewController.swift */,
-				EA895F2E2885EC4700E1C001 /* Main.storyboard */,
-				EA895F312885EC4900E1C001 /* Assets.xcassets */,
-				EA895F332885EC4900E1C001 /* LaunchScreen.storyboard */,
-				EA895F362885EC4900E1C001 /* Info.plist */,
+				EA895F5D288615EB00E1C001 /* Application */,
+				EA895F5C288615D700E1C001 /* Presentation */,
+				EA895F5B288615CF00E1C001 /* Domain */,
+				EA895F5A288615C700E1C001 /* Data */,
+				EA895F59288615B900E1C001 /* Infrastructure */,
+				EA895F582886151700E1C001 /* Resources */,
 			);
 			path = Cinema;
 			sourceTree = "<group>";
@@ -125,6 +138,110 @@
 				EA895F4B2885EC4900E1C001 /* CinemaUITestsLaunchTests.swift */,
 			);
 			path = CinemaUITests;
+			sourceTree = "<group>";
+		};
+		EA895F582886151700E1C001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA895F312885EC4900E1C001 /* Assets.xcassets */,
+				EA895F332885EC4900E1C001 /* LaunchScreen.storyboard */,
+				EA895F362885EC4900E1C001 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA895F59288615B900E1C001 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				EA918A3B28872B4100D57D19 /* Extensions */,
+				EAFEAD6228874EAB0058ED00 /* DataTransfer */,
+				EAFEAD6328874EBF0058ED00 /* NetworkService */,
+				EA895F632886195B00E1C001 /* EndPoint.swift */,
+				EA895F612886180800E1C001 /* NetworkConfigration.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		EA895F5A288615C700E1C001 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EA895F5B288615CF00E1C001 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EA895F5E288617A400E1C001 /* Entities */,
+				EA895F60288617CA00E1C001 /* UseCases */,
+				EA895F5F288617AF00E1C001 /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EA895F5C288615D700E1C001 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EA895F5D288615EB00E1C001 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EA895F282885EC4700E1C001 /* AppDelegate.swift */,
+				EA895F2A2885EC4700E1C001 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EA895F5E288617A400E1C001 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		EA895F5F288617AF00E1C001 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		EA895F60288617CA00E1C001 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		EA918A3B28872B4100D57D19 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EA918A3C28872B6F00D57D19 /* EndPoint+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EAFEAD6228874EAB0058ED00 /* DataTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				EA895F6928861B6600E1C001 /* DataTransferService.swift */,
+				EAFEAD6428874F090058ED00 /* ResponseDecoder.swift */,
+				EAFEAD66288757870058ED00 /* ErrorHandler.swift */,
+			);
+			path = DataTransfer;
+			sourceTree = "<group>";
+		};
+		EAFEAD6328874EBF0058ED00 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				EA895F6728861B5800E1C001 /* NetworkService.swift */,
+				EAFEAD60288746F70058ED00 /* NetworkSessionManager.swift */,
+				EAFEAD5E288743930058ED00 /* NetworkErrorLogger.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +350,6 @@
 			files = (
 				EA895F352885EC4900E1C001 /* LaunchScreen.storyboard in Resources */,
 				EA895F322885EC4900E1C001 /* Assets.xcassets in Resources */,
-				EA895F302885EC4700E1C001 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +374,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA895F2D2885EC4700E1C001 /* ViewController.swift in Sources */,
+				EAFEAD61288746F70058ED00 /* NetworkSessionManager.swift in Sources */,
+				EA895F6A28861B6600E1C001 /* DataTransferService.swift in Sources */,
+				EA895F6828861B5800E1C001 /* NetworkService.swift in Sources */,
 				EA895F292885EC4700E1C001 /* AppDelegate.swift in Sources */,
+				EA895F622886180800E1C001 /* NetworkConfigration.swift in Sources */,
+				EA918A3D28872B6F00D57D19 /* EndPoint+Extensions.swift in Sources */,
+				EA895F642886195B00E1C001 /* EndPoint.swift in Sources */,
+				EAFEAD6528874F090058ED00 /* ResponseDecoder.swift in Sources */,
 				EA895F2B2885EC4700E1C001 /* SceneDelegate.swift in Sources */,
+				EAFEAD5F288743930058ED00 /* NetworkErrorLogger.swift in Sources */,
+				EAFEAD67288757870058ED00 /* ErrorHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +421,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EA895F2E2885EC4700E1C001 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA895F2F2885EC4700E1C001 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EA895F332885EC4900E1C001 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,7 +555,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X65JBYCV33;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Cinema/Info.plist;
+				INFOPLIST_FILE = Cinema/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -467,7 +583,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X65JBYCV33;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Cinema/Info.plist;
+				INFOPLIST_FILE = Cinema/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
