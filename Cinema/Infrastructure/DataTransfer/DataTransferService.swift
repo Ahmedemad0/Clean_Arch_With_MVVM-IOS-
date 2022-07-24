@@ -9,13 +9,14 @@ import Foundation
 
 
 public protocol DataTransferService {
-    typealias CompletionHandler<T> = (Result<T, DataTransferError>)-> Void
+    typealias CompletionHandler<T> = (Result<T, DataTransferError>) -> Void
     
     @discardableResult
-    func request<T: Codable, E: ResponseRequestable>(with endPoint: E, completion: @escaping CompletionHandler<T>) -> NetworkCancellable? where E.Response == T
-
+    func request<T: Decodable, E: ResponseRequestable>(with endpoint: E,
+                                                       completion: @escaping CompletionHandler<T>) -> NetworkCancellable? where E.Response == T
     @discardableResult
-    func request<E>(with endPoint: E, completion: @escaping CompletionHandler<Void>) -> NetworkCancellable? where E: ResponseRequestable, E.Response == Void
+    func request<E: ResponseRequestable>(endpoint: E,
+                                         completion: @escaping CompletionHandler<Void>) -> NetworkCancellable? where E.Response == Void
 }
 
 
@@ -55,43 +56,32 @@ public class DefaultDataTransferService {
 }
 
 extension DefaultDataTransferService: DataTransferService {
-    public func request<T: Codable, E: ResponseRequestable>(with endPoint: E, completion: @escaping CompletionHandler<T>) -> NetworkCancellable? where E.Response == T {
-        
-        return networkService.request(endPoint: endPoint) {[weak self] result in
-            guard let self = self else {return}
-            
+    
+    public func request<T: Decodable, E: ResponseRequestable>(with endpoint: E,
+                                                              completion: @escaping CompletionHandler<T>) -> NetworkCancellable? where E.Response == T {
+
+        return self.networkService.request(endPoint: endpoint) { result in
             switch result {
             case .success(let data):
-                let result: Result<T, DataTransferError> = self.decode(data: data, decoder: endPoint.responseDecoder)
-                DispatchQueue.main.async {
-                    return completion(result)
-                }
-            case .failure(let error):
-                self.errorLogger.log(error: error)
-                let resolvedError = self.resolve(networkError: error)
-                DispatchQueue.main.async {
-                    completion(.failure(resolvedError))
-                }
-            }
-        }
-    }
-    
-    public func request<E>(with endPoint: E, completion: @escaping CompletionHandler<Void>) -> NetworkCancellable? where E: ResponseRequestable, E.Response == Void {
-        
-        return networkService.request(endPoint: endPoint) {[weak self] result in
-            guard let self = self else {return}
-            
-            switch result {
-            case .success:
-                DispatchQueue.main.async {
-                    return completion(.success(()))
-                }
+                let result: Result<T, DataTransferError> = self.decode(data: data, decoder: endpoint.responseDecoder)
+                DispatchQueue.main.async { return completion(result) }
             case .failure(let error):
                 self.errorLogger.log(error: error)
                 let error = self.resolve(networkError: error)
-                DispatchQueue.main.async {
-                    completion(.failure(error))
-                }
+                DispatchQueue.main.async { return completion(.failure(error)) }
+            }
+        }
+    }
+
+    public func request<E>(endpoint: E, completion: @escaping CompletionHandler<Void>) -> NetworkCancellable? where E : ResponseRequestable, E.Response == Void {
+        return self.networkService.request(endPoint: endpoint) { result in
+            switch result {
+            case .success:
+                DispatchQueue.main.async { return completion(.success(())) }
+            case .failure(let error):
+                self.errorLogger.log(error: error)
+                let error = self.resolve(networkError: error)
+                DispatchQueue.main.async { return completion(.failure(error)) }
             }
         }
     }

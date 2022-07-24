@@ -18,6 +18,18 @@
 		EA895F642886195B00E1C001 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA895F632886195B00E1C001 /* EndPoint.swift */; };
 		EA895F6828861B5800E1C001 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA895F6728861B5800E1C001 /* NetworkService.swift */; };
 		EA895F6A28861B6600E1C001 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA895F6928861B6600E1C001 /* DataTransferService.swift */; };
+		EA8A89F5288CD8D7004FD429 /* MoviesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A89F4288CD8D7004FD429 /* MoviesList.swift */; };
+		EA8A89F7288CD8E9004FD429 /* MoviesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A89F6288CD8E9004FD429 /* MoviesData.swift */; };
+		EA8A89F9288CD8F6004FD429 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A89F8288CD8F6004FD429 /* Movie.swift */; };
+		EA8A89FC288CDAB9004FD429 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A89FB288CDAB9004FD429 /* UseCase.swift */; };
+		EA8A89FF288CDAF4004FD429 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A89FE288CDAF4004FD429 /* Cancellable.swift */; };
+		EA8A8A01288CDB3A004FD429 /* SearchMoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A8A00288CDB3A004FD429 /* SearchMoviesUseCase.swift */; };
+		EA8A8A04288CDBAF004FD429 /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A8A03288CDBAF004FD429 /* MoviesRepository.swift */; };
+		EA8A8A08288CDF02004FD429 /* DefaultMoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A8A07288CDF02004FD429 /* DefaultMoviesRepository.swift */; };
+		EA8A8A0B288CDFB6004FD429 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A8A0A288CDFB6004FD429 /* APIEndpoints.swift */; };
+		EA8A8A0E288CE051004FD429 /* MoviesRequestTDO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A8A0D288CE051004FD429 /* MoviesRequestTDO+Mapping.swift */; };
+		EA8A8A10288CE063004FD429 /* MoviesResponseTDO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A8A0F288CE063004FD429 /* MoviesResponseTDO+Mapping.swift */; };
+		EA8A8A13288CE8FB004FD429 /* RepositoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A8A12288CE8FB004FD429 /* RepositoryTask.swift */; };
 		EA918A3D28872B6F00D57D19 /* EndPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA918A3C28872B6F00D57D19 /* EndPoint+Extensions.swift */; };
 		EAFEAD5F288743930058ED00 /* NetworkErrorLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFEAD5E288743930058ED00 /* NetworkErrorLogger.swift */; };
 		EAFEAD61288746F70058ED00 /* NetworkSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFEAD60288746F70058ED00 /* NetworkSessionManager.swift */; };
@@ -58,6 +70,18 @@
 		EA895F632886195B00E1C001 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		EA895F6728861B5800E1C001 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		EA895F6928861B6600E1C001 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		EA8A89F4288CD8D7004FD429 /* MoviesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesList.swift; sourceTree = "<group>"; };
+		EA8A89F6288CD8E9004FD429 /* MoviesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesData.swift; sourceTree = "<group>"; };
+		EA8A89F8288CD8F6004FD429 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		EA8A89FB288CDAB9004FD429 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		EA8A89FE288CDAF4004FD429 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		EA8A8A00288CDB3A004FD429 /* SearchMoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMoviesUseCase.swift; sourceTree = "<group>"; };
+		EA8A8A03288CDBAF004FD429 /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
+		EA8A8A07288CDF02004FD429 /* DefaultMoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMoviesRepository.swift; sourceTree = "<group>"; };
+		EA8A8A0A288CDFB6004FD429 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		EA8A8A0D288CE051004FD429 /* MoviesRequestTDO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoviesRequestTDO+Mapping.swift"; sourceTree = "<group>"; };
+		EA8A8A0F288CE063004FD429 /* MoviesResponseTDO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoviesResponseTDO+Mapping.swift"; sourceTree = "<group>"; };
+		EA8A8A12288CE8FB004FD429 /* RepositoryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTask.swift; sourceTree = "<group>"; };
 		EA918A3C28872B6F00D57D19 /* EndPoint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndPoint+Extensions.swift"; sourceTree = "<group>"; };
 		EAFEAD5E288743930058ED00 /* NetworkErrorLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorLogger.swift; sourceTree = "<group>"; };
 		EAFEAD60288746F70058ED00 /* NetworkSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionManager.swift; sourceTree = "<group>"; };
@@ -115,9 +139,10 @@
 			children = (
 				EA895F5D288615EB00E1C001 /* Application */,
 				EA895F5C288615D700E1C001 /* Presentation */,
+				EA8A8A05288CDEC8004FD429 /* Data */,
 				EA895F5B288615CF00E1C001 /* Domain */,
-				EA895F5A288615C700E1C001 /* Data */,
 				EA895F59288615B900E1C001 /* Infrastructure */,
+				EA8A89FD288CDAE4004FD429 /* Utilis */,
 				EA895F582886151700E1C001 /* Resources */,
 			);
 			path = Cinema;
@@ -162,19 +187,12 @@
 			path = Infrastructure;
 			sourceTree = "<group>";
 		};
-		EA895F5A288615C700E1C001 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		EA895F5B288615CF00E1C001 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				EA895F5E288617A400E1C001 /* Entities */,
-				EA895F60288617CA00E1C001 /* UseCases */,
-				EA895F5F288617AF00E1C001 /* Interfaces */,
+				EA8A89F2288CD852004FD429 /* Entities */,
+				EA8A89F1288CD848004FD429 /* UseCases */,
+				EA8A89F0288CD839004FD429 /* Interfaces */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -195,25 +213,107 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		EA895F5E288617A400E1C001 /* Entities */ = {
+		EA8A89F0288CD839004FD429 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		EA895F5F288617AF00E1C001 /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
+				EA8A8A02288CDB80004FD429 /* Repositories */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
 		};
-		EA895F60288617CA00E1C001 /* UseCases */ = {
+		EA8A89F1288CD848004FD429 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				EA8A8A00288CDB3A004FD429 /* SearchMoviesUseCase.swift */,
+				EA8A89FA288CDAA6004FD429 /* Protocol */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		EA8A89F2288CD852004FD429 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				EA8A89F3288CD899004FD429 /* Movies */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		EA8A89F3288CD899004FD429 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				EA8A89F4288CD8D7004FD429 /* MoviesList.swift */,
+				EA8A89F6288CD8E9004FD429 /* MoviesData.swift */,
+				EA8A89F8288CD8F6004FD429 /* Movie.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		EA8A89FA288CDAA6004FD429 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EA8A89FB288CDAB9004FD429 /* UseCase.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		EA8A89FD288CDAE4004FD429 /* Utilis */ = {
+			isa = PBXGroup;
+			children = (
+				EA8A89FE288CDAF4004FD429 /* Cancellable.swift */,
+			);
+			path = Utilis;
+			sourceTree = "<group>";
+		};
+		EA8A8A02288CDB80004FD429 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				EA8A8A03288CDBAF004FD429 /* MoviesRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		EA8A8A05288CDEC8004FD429 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EA8A8A06288CDEE1004FD429 /* Repositories */,
+				EA8A8A09288CDF98004FD429 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EA8A8A06288CDEE1004FD429 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				EA8A8A07288CDF02004FD429 /* DefaultMoviesRepository.swift */,
+				EA8A8A11288CE8E8004FD429 /* Utils */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		EA8A8A09288CDF98004FD429 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EA8A8A0A288CDFB6004FD429 /* APIEndpoints.swift */,
+				EA8A8A0C288CDFBB004FD429 /* DataMapping */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EA8A8A0C288CDFBB004FD429 /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				EA8A8A0D288CE051004FD429 /* MoviesRequestTDO+Mapping.swift */,
+				EA8A8A0F288CE063004FD429 /* MoviesResponseTDO+Mapping.swift */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		EA8A8A11288CE8E8004FD429 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA8A8A12288CE8FB004FD429 /* RepositoryTask.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		EA918A3B28872B4100D57D19 /* Extensions */ = {
@@ -374,17 +474,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8A8A01288CDB3A004FD429 /* SearchMoviesUseCase.swift in Sources */,
+				EA8A89FC288CDAB9004FD429 /* UseCase.swift in Sources */,
+				EA8A89F9288CD8F6004FD429 /* Movie.swift in Sources */,
+				EA8A8A08288CDF02004FD429 /* DefaultMoviesRepository.swift in Sources */,
+				EA8A8A0E288CE051004FD429 /* MoviesRequestTDO+Mapping.swift in Sources */,
+				EA8A89FF288CDAF4004FD429 /* Cancellable.swift in Sources */,
+				EA8A8A10288CE063004FD429 /* MoviesResponseTDO+Mapping.swift in Sources */,
 				EAFEAD61288746F70058ED00 /* NetworkSessionManager.swift in Sources */,
 				EA895F6A28861B6600E1C001 /* DataTransferService.swift in Sources */,
+				EA8A89F5288CD8D7004FD429 /* MoviesList.swift in Sources */,
 				EA895F6828861B5800E1C001 /* NetworkService.swift in Sources */,
 				EA895F292885EC4700E1C001 /* AppDelegate.swift in Sources */,
 				EA895F622886180800E1C001 /* NetworkConfigration.swift in Sources */,
 				EA918A3D28872B6F00D57D19 /* EndPoint+Extensions.swift in Sources */,
 				EA895F642886195B00E1C001 /* EndPoint.swift in Sources */,
+				EA8A8A04288CDBAF004FD429 /* MoviesRepository.swift in Sources */,
+				EA8A89F7288CD8E9004FD429 /* MoviesData.swift in Sources */,
+				EA8A8A0B288CDFB6004FD429 /* APIEndpoints.swift in Sources */,
 				EAFEAD6528874F090058ED00 /* ResponseDecoder.swift in Sources */,
 				EA895F2B2885EC4700E1C001 /* SceneDelegate.swift in Sources */,
 				EAFEAD5F288743930058ED00 /* NetworkErrorLogger.swift in Sources */,
 				EAFEAD67288757870058ED00 /* ErrorHandler.swift in Sources */,
+				EA8A8A13288CE8FB004FD429 /* RepositoryTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,7 +21,7 @@ public enum BodyEncoding {
     case stringEncodingAscii
 }
 
-public class EndPoint<R> {
+public class EndPoint<R>: ResponseRequestable{
     public typealias Response = R
     
     public let path: String
